@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.icesi.pokedex.databinding.ActivityMainBinding
@@ -25,14 +26,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        var trainerName = binding.trainerTxt.text.toString()
-
         binding.getIn.setOnClickListener {
+            var trainerName = binding.trainerTxt.text.toString()
             authenticator(trainerName)
         }
 
         binding.registerBtn.setOnClickListener {
+            var trainerName = binding.trainerTxt.text.toString()
             var bol: Boolean = createNewTrainer(trainerName)
             val intent = Intent(this, HomeActivity::class.java)
             intent.putExtra("trainerName", trainerName)
@@ -57,6 +57,9 @@ class MainActivity : AppCompatActivity() {
 //        while (!query.get().isComplete) {
 //
 //        }
+
+        Log.e(">>>>", trainerName)
+
         val newTrainer = Trainer(trainerName, "")
         db.collection("trainers")
             .add(newTrainer)
@@ -81,6 +84,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
             }
+            Toast.makeText(applicationContext, "You Are Not Registered", Toast.LENGTH_SHORT).show()
         }
     }
 
