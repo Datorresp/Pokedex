@@ -6,5 +6,5 @@ data class Pokemon (
     var defense: String,
     var attack: String,
     var velocity: String,
-    var vida: String
+    var life: String
         )

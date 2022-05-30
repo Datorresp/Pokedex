@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/Downloads/gradle-7.3.3/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/res" />
       <root url="file://$USER_HOME$/Downloads/gradle-7.3.3/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/Downloads/gradle-7.3.3/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca5b9dd6e39f015d6a6db07809ce9236/transformed/gridlayout-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
